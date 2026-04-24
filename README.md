@@ -15,7 +15,7 @@ Computational physics & ML systems engineer focused on quantum simulation, model
 ## Featured Projects
 
 ### Quantum Eigensolver – Hydrogen VQE Study
-[View Repository →](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
+[View Repository](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
 
 Variational Quantum Eigensolver implementation for hydrogen ground-state estimation with classical diagonalization benchmarking and scaling analysis.
 
@@ -24,7 +24,7 @@ Variational Quantum Eigensolver implementation for hydrogen ground-state estimat
 ---
 
 ### PyTorch → ONNX → C++ Inference Pipeline
-[View Repository →](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline)
+[View Repository](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline)
 
 End-to-end ML deployment pipeline converting trained PyTorch models into ONNX format and executing inference in C++ using ONNX Runtime.
 
@@ -33,7 +33,7 @@ End-to-end ML deployment pipeline converting trained PyTorch models into ONNX fo
 ---
 
 ### Scientific Plotting Infrastructure
-[View Repository →](https://github.com/ksalamone59/gnuplot_latex_utils)
+[View Repository](https://github.com/ksalamone59/gnuplot_latex_utils)
 
 Reproducible gnuplot + LaTeX system for consistent publication-quality scientific figures across projects.
 
@@ -41,8 +41,16 @@ Reproducible gnuplot + LaTeX system for consistent publication-quality scientifi
 
 ## Main Results
 
+![VQE Results](results_plots/heatmap.png)
+- Output from characterizing VQE as a solution to the Hydrogen atoms ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius $r$ in the Hamiltonian approximation
 
+![ML Results](results_plots/final_inference.png)
+- Output from the ONNX ML pipeline. Showcases
+    - Noisy input data to the C++ inference 
+    - The output C++ inference 
+    - The true function 
 
+Both plots were created using my gnuplot latex utilities repository.
 ## System View
 
 Physics Simulation → ML Modeling → Deployment Runtime → Scientific Visualization
@@ -56,4 +64,5 @@ Python · PyTorch · Qiskit · ONNX · C++ · Eigen · CMake · Gnuplot · LaTeX
 
 ## Contact
 GitHub: ksalamone59
-[LinkedIn]{https://www.linkedin.com/in/kyle-salamone-a834b6205/}
+ 
+[LinkedIn](https://www.linkedin.com/in/kyle-salamone-a834b6205/)
