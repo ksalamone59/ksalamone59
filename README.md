@@ -41,14 +41,18 @@ Reproducible gnuplot + LaTeX system for consistent publication-quality scientifi
 
 ## Main Results
 
-![VQE Results](results_plots/heatmap.png)
-- Output from characterizing VQE as a solution to the Hydrogen atoms ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius $r$ in the Hamiltonian approximation
+<img src="results_plots/heatmap.png" width="600">
+<p>
+Output from characterizing VQE as a solution to the Hydrogen atoms ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
+</p>
 
-![ML Results](results_plots/final_inference.png)
-- Output from the ONNX ML pipeline. Showcases
-    - Noisy input data to the C++ inference 
-    - The output C++ inference 
-    - The true function 
+<img src="results_plots/final_inference.png" width="600">
+<p>
+Output from the ONNX ML pipeline. Showcases:
+- Noisy input data to the C++ inference  
+- The output C++ inference  
+- The true function
+</p>
 
 Both plots were created using my gnuplot latex utilities repository.
 ## System View
