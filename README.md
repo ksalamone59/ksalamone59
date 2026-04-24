@@ -1,6 +1,6 @@
 # Kyle Salamone
 
-Computational physics & ML systems engineer focused on quantum simulation, model deployment, and scientific computing pipelines.
+Experimental Physics PhD student working at the intersection of large-scale detector data analysis, machine learning systems, and computational physics. Focused on building and deploying scientific and ML pipelines for high-performance and research computing environments, with applications in quantum information and experimental data analysis.
 
 ---
 
@@ -45,7 +45,7 @@ Reproducible gnuplot + LaTeX system for consistent publication-quality scientifi
  <img src="results_plots/heatmap.png" width="750">
 </div>
 <p>
-Output from characterizing VQE as a solution to the Hydrogen atoms ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
+Output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
 </p>
 
 <div align="center">
