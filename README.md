@@ -1,7 +1,7 @@
 # Kyle Salamone
+---
 
 Experimental Physics PhD student working on large-scale detector data analysis, machine learning systems, and computational physics. Focused on designing and deploying scientific and ML pipelines in high-performance research environments, with emphasis on quantum information and data-driven modeling of physical systems.
----
 
 ## What I Work On
 
