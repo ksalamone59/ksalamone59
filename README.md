@@ -14,26 +14,30 @@ Computational physics & ML systems engineer focused on quantum simulation, model
 
 ## Featured Projects
 
-### Quantum Eigensolver – Hydrogen VQE Study
-Variational Quantum Eigensolver implementation for hydrogen ground-state estimation with classical diagonalization benchmarking and scaling analysis across discretized Hilbert spaces.
+### 🧪 Quantum Eigensolver – Hydrogen VQE Study
+[View Repository →](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
+
+Variational Quantum Eigensolver implementation for hydrogen ground-state estimation with classical diagonalization benchmarking and scaling analysis.
 
 *Focus: quantum algorithms, Hamiltonian simulation, optimization landscapes, scaling behavior*
 
 ---
 
-### PyTorch $\rightarrow$ ONNX $\rightarrow$ C++ Inference Pipeline
-End-to-end machine learning deployment pipeline converting trained PyTorch models into ONNX format and executing inference in C++ using ONNX Runtime.
+### ⚙️ PyTorch → ONNX → C++ Inference Pipeline
+[View Repository →](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline)
+
+End-to-end ML deployment pipeline converting trained PyTorch models into ONNX format and executing inference in C++ using ONNX Runtime.
 
 *Focus: model deployment, cross-language inference, performance-oriented ML systems*
 
 ---
 
-### Scientific Plotting Infrastructure
-Lightweight gnuplot + LaTeX-based system for generating consistent publication-quality figures across computational physics and ML projects.
+### 📊 Scientific Plotting Infrastructure
+[View Repository →](https://github.com/ksalamone59/gnuplot_latex_utils)
 
-*Focus: reproducible scientific visualization, automation, workflow consistency*
+Reproducible gnuplot + LaTeX system for consistent publication-quality scientific figures across projects.
 
----
+*Focus: scientific visualization, automation, reproducibility*
 
 ## System View
 
