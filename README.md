@@ -30,7 +30,7 @@ Variational Quantum Eigensolver implementation for hydrogen ground-state estimat
 
 End-to-end ML deployment pipeline converting trained PyTorch models into ONNX format and executing inference in C++ using ONNX Runtime.
 
-*Focus: model deployment, cross-language inference, performance-oriented ML systems*
+*Focus: model deployment, cross-language inference, performance-oriented ML systems, performance benchmarking*
 
 ---
 
