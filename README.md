@@ -19,9 +19,12 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 ### Quantum Eigensolver – Hydrogen VQE Study
 [View Repository](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
 
-Variational Quantum Eigensolver implementation for hydrogen ground-state estimation with classical diagonalization benchmarking and scaling analysis.
+Variational Quantum Eigensolver (VQE) study of the hydrogen atom ground state, directly benchmarked against a classical eigenvalue solver under identical finite-difference discretization.
 
-*Focus: quantum algorithms, Hamiltonian simulation, optimization landscapes, scaling behavior*
+
+This project isolates **variational error vs discretization error**, showing that in low-qubit regimes, VQE performance is primarily limited by the underlying numerical representation rather than ansatz or optimizer choice.
+
+*Focus: quantum algorithms, Hamiltonian discretization, error decomposition, variational landscapes, scaling behavior*
 
 ---
 
