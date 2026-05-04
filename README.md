@@ -16,7 +16,7 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ## Featured Projects
 
-### Quantum Eigensolver – Hydrogen VQE Study
+### Quantum Eigensolver – Hydrogen VQE Discretization Study
 [View Repository](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
 
 Variational Quantum Eigensolver (VQE) study of the hydrogen atom ground state, directly benchmarked against a classical eigenvalue solver under identical finite-difference discretization.
