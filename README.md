@@ -28,9 +28,13 @@ Variational Quantum Eigensolver implementation for hydrogen ground-state estimat
 ### PyTorch → ONNX → C++ Inference Pipeline
 [View Repository](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline)
 
-End-to-end ML deployment pipeline converting trained PyTorch models into ONNX format and executing inference in C++ using ONNX Runtime.
+C++ inference engine with pre-allocated tensor reuse and singleton session 
+management for zero-overhead-per-call ORT deployment. Includes statistically 
+rigorous benchmarking via Welford online variance estimation — batched inference 
+achieves 9.4M samples/s, ~16× over sequential baseline. Engineering patterns 
+drawn from production physics reconstruction constraints.
 
-*Focus: model deployment, cross-language inference, performance-oriented ML systems, performance benchmarking*
+*Focus: ML deployment, C++ inference systems, performance benchmarking*
 
 ---
 
