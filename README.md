@@ -29,7 +29,9 @@ This project isolates **variational error vs discretization error**, showing tha
 ---
 
 ### PyTorch → ONNX → C++ Inference Pipeline
-[View Repository](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline)
+[View Repository](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline) 
+
+[![C++ Unit Tests](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline/actions/workflows/cpp-tests.yml/badge.svg)](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline/actions/workflows/cpp-tests.yml)
 
 C++ inference engine with pre-allocated tensor reuse and singleton session 
 management for zero-overhead-per-call ORT deployment. Includes statistically 
