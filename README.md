@@ -14,15 +14,21 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ---
 
+## Highlights
+- Built C++ ML inference system achieving **9.4M samples/sec (16× speedup)** in batched vs per sample inference
+- Quantified **VQE error decomposition** (discretization vs variational limits)
+- Designed **end-to-end scientific pipelines** (simulation $\rightarrow$ ML $\rightarrow$ deployment $\rightarrow$ visualization)
+
+---
+
 ## Featured Projects
 
 ### Quantum Eigensolver – Hydrogen VQE Discretization Study
 [View Repository](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
 
-Variational Quantum Eigensolver (VQE) study of the hydrogen atom ground state, directly benchmarked against a classical eigenvalue solver under identical finite-difference discretization.
+- Quantified VQE vs classical ground-state solutions under identical discretization by isolating **variational vs discretization error contributions**, showing up to **38% error is representation-bound** in low-qubit regimes.
 
-
-This project isolates **variational error vs discretization error**, showing that in low-qubit regimes, VQE performance is primarily limited by the underlying numerical representation rather than ansatz or optimizer choice.
+- **Why this Matters**: Identifies when VQE improvements should target problem representation (discretization/encoding) rather than circuit design or optimization.
 
 *Focus: quantum algorithms, Hamiltonian discretization, error decomposition, variational landscapes, scaling behavior*
 
@@ -33,11 +39,13 @@ This project isolates **variational error vs discretization error**, showing tha
 
 [![C++ Unit Tests](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline/actions/workflows/cpp-tests.yml/badge.svg)](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline/actions/workflows/cpp-tests.yml)
 
-C++ inference engine with pre-allocated tensor reuse and singleton session 
+- C++ inference engine with pre-allocated tensor reuse and singleton session 
 management for zero-overhead-per-call ORT deployment. Includes statistically 
 rigorous benchmarking via Welford online variance estimation — batched inference 
 achieves 9.4M samples/s, ~16× over sequential baseline. Engineering patterns 
 drawn from production physics reconstruction constraints.
+
+- **Why this Matters**: Demonstrates full pipeline from training in Python to an environment with highly optimized, Python-free inference; and studies the overhead implications of batched vs per sample inference.
 
 *Focus: ML deployment, C++ inference systems, performance benchmarking*
 
@@ -46,7 +54,9 @@ drawn from production physics reconstruction constraints.
 ### Scientific Plotting Infrastructure
 [View Repository](https://github.com/ksalamone59/gnuplot_latex_utils)
 
-Reproducible gnuplot + LaTeX system for consistent publication-quality scientific figures across projects.
+- Reproducible gnuplot + LaTeX system for consistent publication-quality scientific figures across projects.
+
+- **Why this Matters**: Provides a consistent visual language across all projects via a shared template and scripting layer
 
 *Focus: scientific visualization, automation, reproducibility*
 
@@ -58,7 +68,7 @@ Reproducible gnuplot + LaTeX system for consistent publication-quality scientifi
  <img src="results_plots/heatmap.png" width="750">
 </div>
 <p>
-Output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
+This heatmap shows the output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
 </p>
 
 <div align="center">
@@ -74,7 +84,7 @@ Output from the ONNX ML pipeline. Showcases:
 Both plots were created using my gnuplot latex utilities repository.
 ## System View
 
-Physics Simulation → ML Modeling → Deployment Runtime → Scientific Visualization
+Physics Simulation → ML Modeling → C++ Deployment → Scientific Visualization
 
 ---
 
