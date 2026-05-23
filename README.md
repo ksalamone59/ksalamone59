@@ -16,15 +16,15 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ## Featured Projects
 
-### Quantum Eigensolver – Hydrogen VQE Discretization Study
-[View Repository](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
+### C++ ML Inference Profiler Engine
+[View Repository](https://github.com/ksalamone59/inference-profiler)
 
-Variational Quantum Eigensolver (VQE) study of the hydrogen atom ground state, directly benchmarked against a classical eigenvalue solver under identical finite-difference discretization.
+CLI for profiling, benchmarking, and comparing ML inference backends in C++; designed for performance-critical environments where Python is not a viable runtime. Supports four modes: inference, benchmark, compare, and batch sweep. Backends are abstracted behind a pure virtual interface, allowing new engines 
+to drop in cleanly. Sweep mode outputs `.dat` files across batch sizes for direct plotting pipeline integration.
 
+ORT 4-thread inference achieves **13.97M samples/s** at batch size 1024 — **~5.6× over single-threaded TorchScript** under identical conditions. Model-to-model R²=0.9999 confirms numerical equivalence between backends.
 
-This project isolates **variational error vs discretization error**, showing that in low-qubit regimes, VQE performance is primarily limited by the underlying numerical representation rather than ansatz or optimizer choice.
-
-*Focus: quantum algorithms, Hamiltonian discretization, error decomposition, variational landscapes, scaling behavior*
+*Focus: ML inference systems, C++ performance engineering, statistical benchmarking, backend abstraction*
 
 ---
 
@@ -43,6 +43,18 @@ drawn from production physics reconstruction constraints.
 
 ---
 
+### Quantum Eigensolver – Hydrogen VQE Discretization Study
+[View Repository](https://github.com/ksalamone59/variational-quantum-eigensolver-hydrogen-study)
+
+Variational Quantum Eigensolver (VQE) study of the hydrogen atom ground state, directly benchmarked against a classical eigenvalue solver under identical finite-difference discretization.
+
+
+This project isolates **variational error vs discretization error**, showing that in low-qubit regimes, VQE performance is primarily limited by the underlying numerical representation rather than ansatz or optimizer choice.
+
+*Focus: quantum algorithms, Hamiltonian discretization, error decomposition, variational landscapes, scaling behavior*
+
+---
+
 ### Scientific Plotting Infrastructure
 [View Repository](https://github.com/ksalamone59/gnuplot_latex_utils)
 
@@ -53,6 +65,13 @@ Reproducible gnuplot + LaTeX system for consistent publication-quality scientifi
 ---
 
 ## Main Results
+
+<div align="center">
+    <img src="results_plots/throughput_per_batch.png" width="750">
+</div>
+<p>
+Output from C++ ML Inference Backend Profile project of throughput vs batch size for 4 different models: ORT and Torch C++ APIs, single vs quad threaded. ORT consistently outperforms Torch at the same thread count. Threaded variants have higher variance due to synchronization overhead. 
+</p>
 
 <div align="center">
  <img src="results_plots/heatmap.png" width="750">
