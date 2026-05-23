@@ -14,6 +14,13 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ---
 
+## Highlights
+- Built C++ ML inference system achieving **9.4M samples/sec (16× speedup)** in batched vs per sample inference
+- Quantified **VQE error decomposition** (discretization vs variational limits)
+- Designed **end-to-end scientific pipelines** (simulation $\rightarrow$ ML $\rightarrow$ deployment $\rightarrow$ visualization)
+
+---
+
 ## Featured Projects
 
 ### C++ ML Inference Profiler Engine
@@ -33,11 +40,13 @@ ORT 4-thread inference achieves **13.97M samples/s** at batch size 1024 — **~5
 
 [![C++ Unit Tests](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline/actions/workflows/cpp-tests.yml/badge.svg)](https://github.com/ksalamone59/pytorch-onnx-cpp-pipeline/actions/workflows/cpp-tests.yml)
 
-C++ inference engine with pre-allocated tensor reuse and singleton session 
+- C++ inference engine with pre-allocated tensor reuse and singleton session 
 management for zero-overhead-per-call ORT deployment. Includes statistically 
 rigorous benchmarking via Welford online variance estimation — batched inference 
 achieves 9.4M samples/s, ~16× over sequential baseline. Engineering patterns 
 drawn from production physics reconstruction constraints.
+
+- **Why this Matters**: Demonstrates full pipeline from training in Python to an environment with highly optimized, Python-free inference; and studies the overhead implications of batched vs per sample inference.
 
 *Focus: ML deployment, C++ inference systems, performance benchmarking*
 
@@ -58,7 +67,9 @@ This project isolates **variational error vs discretization error**, showing tha
 ### Scientific Plotting Infrastructure
 [View Repository](https://github.com/ksalamone59/gnuplot_latex_utils)
 
-Reproducible gnuplot + LaTeX system for consistent publication-quality scientific figures across projects.
+- Reproducible gnuplot + LaTeX system for consistent publication-quality scientific figures across projects.
+
+- **Why this Matters**: Provides a consistent visual language across all projects via a shared template and scripting layer
 
 *Focus: scientific visualization, automation, reproducibility*
 
@@ -77,7 +88,7 @@ Output from C++ ML Inference Backend Profile project of throughput vs batch size
  <img src="results_plots/heatmap.png" width="750">
 </div>
 <p>
-Output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
+This heatmap shows the output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
 </p>
 
 <div align="center">
@@ -93,7 +104,7 @@ Output from the ONNX ML pipeline. Showcases:
 Both plots were created using my gnuplot latex utilities repository.
 ## System View
 
-Physics Simulation → ML Modeling → Deployment Runtime → Scientific Visualization
+Physics Simulation → ML Modeling → C++ Deployment → Scientific Visualization
 
 ---
 
