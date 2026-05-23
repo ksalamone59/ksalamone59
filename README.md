@@ -26,12 +26,11 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 ### C++ ML Inference Profiler Engine
 [View Repository](https://github.com/ksalamone59/inference-profiler)
 
-CLI for profiling, benchmarking, and comparing ML inference backends in C++; designed for performance-critical environments where Python is not a viable runtime. Supports four modes: inference, benchmark, compare, and batch sweep. Backends are abstracted behind a pure virtual interface, allowing new engines 
-to drop in cleanly. Sweep mode outputs `.dat` files across batch sizes for direct plotting pipeline integration.
+Built a backend-agnostic C++ framework for benchmarking and comparing ML inference engines in Python-free deployment environments. Supports ONNX Runtime and LibTorch through a common abstract interface, configurable threading, reusable tensor allocation, statistical benchmarking (Welford online variance), backend comparison, and automated batch-size sweep studies.
 
-ORT 4-thread inference achieves **13.97M samples/s** at batch size 1024 — **~5.6× over single-threaded TorchScript** under identical conditions. Model-to-model R²=0.9999 confirms numerical equivalence between backends.
+Measured up to 13.97M samples/sec using ONNX Runtime with four threads and demonstrated R² = 0.9999 agreement between ONNX and Torch backends.
 
-*Focus: ML inference systems, C++ performance engineering, statistical benchmarking, backend abstraction*
+Focus: C++ systems engineering, ML deployment, performance optimization, benchmarking methodology, backend abstraction
 
 ---
 
