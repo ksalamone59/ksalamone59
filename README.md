@@ -8,6 +8,7 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ## What I Work On
 
+- High Performance Computing
 - Quantum and computational physics (variational algorithms, Hamiltonian simulation)
 - Machine learning systems engineering (PyTorch → ONNX → C++ inference pipelines)
 - Scientific computing infrastructure (reproducible visualization and analysis tooling)
@@ -15,6 +16,7 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 ---
 
 ## Highlights
+- Built **backend-agnostic C++ inference profiler** (ORT + LibTorch) with zero-allocation hot path; **13.97M samples/sec**, R²=0.9999 cross-backend numerical agreement
 - Built C++ ML inference system achieving **9.4M samples/sec (16× speedup)** in batched vs per sample inference
 - Quantified **VQE error decomposition** (discretization vs variational limits)
 - Designed **end-to-end scientific pipelines** (simulation $\rightarrow$ ML $\rightarrow$ deployment $\rightarrow$ visualization)
