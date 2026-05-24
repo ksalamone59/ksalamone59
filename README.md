@@ -8,7 +8,7 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ## What I Work On
 
-- High Performance Computing
+- High-performance computing
 - Quantum and computational physics (variational algorithms, Hamiltonian simulation)
 - Machine learning systems engineering (PyTorch → ONNX → C++ inference pipelines)
 - Scientific computing infrastructure (reproducible visualization and analysis tooling)
@@ -80,21 +80,21 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
     <img src="results_plots/throughput_per_batch.png" width="750">
 </div>
 <p>
-Results from the C++ ML Inference Profiler Engine showing throughput as a function of batch size for ONNX Runtime and LibTorch backends under single-threaded and four-threaded execution. ORT consistently outperforms Torch at the same thread count. Threaded variants have higher variance due to synchronization overhead. 
+Results from the C++ ML Inference Profiler Engine showing throughput as a function of batch size for ONNX Runtime and LibTorch backends under single-threaded and four-threaded execution. ORT consistently outperforms LibTorch at the same thread count. Threaded variants have higher variance due to synchronization overhead. 
 </p>
 
 <div align="center">
  <img src="results_plots/heatmap.png" width="750">
 </div>
 <p>
-This heatmap shows the output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifying the minimum achievable error as a function of the number of qubits and maximum radius r in the Hamiltonian approximation
+This heatmap shows the output from characterizing VQE as a solution to the Hydrogen atom's ground state. Quantifies the minimum achievable error as a function of qubit count and maximum radius r in the Hamiltonian discretization.
 </p>
 
 <div align="center">
  <img src="results_plots/final_inference.png" width="750">
 </div>
 <p>
-Output from the ONNX ML pipeline. Showcases:
+Output from the PyTorch → ONNX → C++ inference pipeline showing:
 - Noisy input data to the C++ inference  
 - The output C++ inference  
 - The true function
