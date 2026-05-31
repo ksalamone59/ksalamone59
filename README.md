@@ -30,13 +30,13 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 [![Unit Tests](https://github.com/ksalamone59/inference-profiler/actions/workflows/cpp-tests.yml/badge.svg)](https://github.com/ksalamone59/inference-profiler/actions/workflows/cpp-tests.yml)
 
-- Built a backend-agnostic C++ framework for benchmarking and comparing ML inference engines in Python-free deployment environments. Supports ONNX Runtime and LibTorch through a common abstract interface, configurable threading, reusable tensor allocation, statistical benchmarking (Welford online variance), backend comparison, and automated batch-size sweep studies.
+- Built a backend-agnostic C++ framework for benchmarking and comparing ML inference engines in Python-free deployment environments. Supports ONNX Runtime and LibTorch through a common abstract interface, CPU and GPU inference modes, configurable threading, reusable tensor allocation, statistical benchmarking (Welford online variance), backend comparison, and automated batch-size sweep studies.
 
 - Measured up to **13.97M samples/sec** using ONNX Runtime with four threads and demonstrated **R² = 0.9999** agreement between ONNX Runtime and LibTorch backends.
 
 - **Why this matters:** Real-world ML deployment often requires choosing between inference runtimes with competing performance, portability, and maintenance tradeoffs. This project provides a reproducible framework for quantifying those tradeoffs, validating numerical consistency across backends, and identifying bottlenecks before deployment into performance-critical environments.
 
-*Focus: C++ systems engineering, ML deployment, performance optimization, benchmarking methodology, backend abstraction*
+*Focus: C++ systems engineering, ML deployment, performance optimization, benchmarking methodology, backend abstraction, GPU vs CPU inferencing*
 
 ---
 
