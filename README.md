@@ -65,6 +65,24 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ---
 
+### Supply Chain Optimizer
+
+[View Repository](https://github.com/ksalamone59/supply-chain-optimizer)
+
+- Developed a geographically aware linear programming model using SciPy's HiGHS solver to minimize transportation costs across 5 warehouses and 20 customer demand zones while satisfying warehouse capacity and customer demand constraints.
+
+- Modeled transportation costs as a function of Euclidean distance between warehouses and destinations, generating optimal shipment allocations and network visualizations using NumPy and Matplotlib.
+
+- Implemented resilience and sensitivity analysis by simulating individual warehouse closures and 50% capacity reductions, quantifying changes in total network cost and identifying the most critical warehouse facilities.
+
+- Built a reproducible project workflow with a Makefile, virtual-environment dependency management, automated plot generation, and deterministic simulation using NumPy's random number generator.
+
+- **Why this matters:** Demonstrates the application of mathematical optimization and computational modeling to a practical resource-allocation problem, including analysis of how an optimized network responds to infrastructure disruptions.
+
+*Focus: linear programming, operations research, optimization, sensitivity analysis, computational modeling, scientific visualization*
+
+---
+
 ### Scientific Plotting Infrastructure
 [View Repository](https://github.com/ksalamone59/gnuplot_latex_utils)
 
@@ -103,14 +121,22 @@ Output from the PyTorch → ONNX → C++ inference pipeline showing:
 </p>
 
 All figures shown above were generated using the Scientific Plotting Infrastructure repository.
+
+<div align="center">
+ <img src="results_plots/network.png" width="750">
+</div>
+<p>
+Network representing the optimized solution for the supply chain optimizer. The blue squares are the warehouses, orange points the customer destinations, and the size of the lines connecting them is a proxy for the amount of resources being transferred. 
+</p>
 ## System View
 
-Physics Simulation → Data Generation → ML Training → Optimized C++ Inference → Scientific Visualization
+Physics Simulation → Data Generation → Optimization / ML → High-Performance Inference → Scientific Visualization
 
 ---
 
 ## Tools & Stack
-Python · PyTorch · Qiskit · ONNX · C++ · Eigen · CMake · Gnuplot · LaTeX · Linux
+
+Python · NumPy · SciPy · Matplotlib · PyTorch · Qiskit · ONNX · C++ · Eigen · CMake · Gnuplot · LaTeX · Linux
 
 ---
 
