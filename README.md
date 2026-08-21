@@ -67,7 +67,7 @@ Experimental Physics PhD student working on large-scale detector data analysis, 
 
 ### Supply Chain Optimizer
 
-[View Repository](https://github.com/ksalamone59/supply-chain-optimizer)
+[View Repository](https://github.com/ksalamone59/supply-chain-optimization)
 
 - Developed a geographically aware linear programming model using SciPy's HiGHS solver to minimize transportation costs across 5 warehouses and 20 customer demand zones while satisfying warehouse capacity and customer demand constraints.
 
